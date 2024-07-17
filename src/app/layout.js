@@ -1,7 +1,6 @@
-import { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.scss";
-import "../../lib/fontawesome";
+import "./lib/fontawesome";
 
 const kanit = Kanit({
   weight: ["400"],
