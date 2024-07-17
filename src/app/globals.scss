@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  background-color: #1a1328;
+}
+main {
+  color: gray;
+  .home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+      color: violet;
+    }
+  }
+}
+nav {
+  ul {
+    gap: 2rem;
+    display: flex;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 3rem;
+        gap: 10px;
+        color: violet;
+        transition: all 0.3s ease;
+        &:hover {
+          color: pink;
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
