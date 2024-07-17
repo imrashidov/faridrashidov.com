@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.scss";
 import "../../lib/fontawesome";
@@ -16,11 +16,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
       <body className={kanit.className}>{children}</body>
     </html>
   );
